@@ -38,7 +38,7 @@ def average():
     first_num = input("input first number")
     second_num = input("input second number")
 
-    if not first_num.isdigit() and not second_num.isdigit():
+    if is_digit(first_num, second_num):
         return "please enter a number"
     
     if first_num < second_num:
@@ -47,3 +47,5 @@ def average():
         average =  first_num - second_num
     else:
         average = 0
+
+    return average
