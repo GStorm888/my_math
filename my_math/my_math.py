@@ -18,3 +18,18 @@ def min_func():
     else:
         min = first_num
     return min
+
+def max_func():
+    first_num = input("input first number >>>")
+    second_num = input("input second number >>>")
+
+    if is_digit(first_num, second_num):
+        return "please enter a number"
+    
+    if first_num < second_num:
+        max = second_num
+    elif first_num > second_num:
+        max = first_num
+    else:
+        max = first_num
+    return max
