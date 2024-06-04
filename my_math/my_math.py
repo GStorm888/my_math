@@ -6,9 +6,9 @@ def min():
         return "please enter a number"
     
     if first_num < second_num:
-        min = second_num
-    elif first_num > second_num:
         min = first_num
+    elif first_num > second_num:
+        min = second_num
     else:
         min = first_num
         
